@@ -3,16 +3,25 @@
 //---------- GLOBAL VARIABLES ----------//
 const express = require('express');
 const app = express();
+const path = require('path');
 
 //---------- SERVER ----------//
-app.get('/', (req, res, next) => {
-  next();
-});
-
-app.use(express.static(''));
+app.use(express.static('public'));
 
 app.listen(8080, function (req, res) {
   console.log('Foodlette listening on port 8080');
+});
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+app.get('/categories', function(req, res) {
+  res.sendFile(path.join(__dirname, '/categories.html'));
+});
+
+app.get('/mywheels', function(req, res) {
+  res.sendFile(path.join(__dirname, '/mywheels.html'));
 });
 
 //---------- SERVER FUNCTIONS ----------//
