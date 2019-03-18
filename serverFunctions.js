@@ -8,20 +8,61 @@ const path = require('path');
 //---------- SERVER ----------//
 app.use(express.static('public'));
 
-app.listen(8080, function (req, res) {
+app.listen(8080, function(req, res) {
   console.log('Foodlette listening on port 8080');
 });
 
+//---------- SERVER GETS ----------//
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/categories', function(req, res) {
-  res.sendFile(path.join(__dirname, '/categories.html'));
+  res.sendFile(path.join(__dirname, 'public', 'categories.html'));
+});
+
+app.get('/comfort', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'comfortWheel.html'));
+});
+
+app.get('/mood', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'moodWheel.html'));
+});
+
+app.get('/spicy', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'spicyWheel.html'));
+});
+
+app.get('/sweet', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'sweetWheel.html'));
+});
+
+app.get('/lifestyle', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'lifestyleWheel.html'));
+});
+
+app.get('/pleasure', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'pleasureWheel.html'));
+});
+
+app.get('/meat', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'meatWheel.html'));
+});
+
+app.get('/deal', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'dealWheel.html'));
+});
+
+app.get('/country', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'preset-wheels', 'countryWheel.html'));
+});
+
+app.get('/favourites', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'myWheels.html'));
 });
 
 app.get('/mywheels', function(req, res) {
-  res.sendFile(path.join(__dirname, '/mywheels.html'));
+  res.sendFile(path.join(__dirname, 'public' ,'myWheels.html'));
 });
 
 //---------- SERVER FUNCTIONS ----------//
