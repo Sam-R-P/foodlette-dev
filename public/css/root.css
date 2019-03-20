@@ -37,3 +37,105 @@ body {
 .view-icon {
   cursor: pointer;
 }
+
+#bodyContent {
+  background-image: linear-gradient(#E9E9E9, #BFBFBF);
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  margin: 60px 0px 0px 0px;
+}
+
+#bodyContentWheel {
+  background-image: linear-gradient(#E9E9E9, #BFBFBF);
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  margin: 60px 0px 0px 0px;
+  display: none;
+}
+
+#bodyContentCategories {
+  background-image: linear-gradient(#E9E9E9, #BFBFBF);
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  margin: 60px 0px 0px 0px;
+}
+
+#mostPopularRoulette {
+  background-image: url("../assets/placeholders/comfort-creations.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#leastPopularRoulette {
+  background-image: url("../assets/placeholders/lifestyles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#ComfortCreations {
+  background-image: url("../assets/placeholders/comfort-creations.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#MoodFoods {
+  background-image: url("../assets/placeholders/mood-foods.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#SpicySensations {
+  background-image: url("../assets/placeholders/spicy-sensations.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#SweetTreats {
+  background-image: url("../assets/placeholders/sweet-treats.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#Lifestyles {
+  background-image: url("../assets/placeholders/lifestyles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#GuiltyPleasures {
+  background-image: url("../assets/placeholders/guilty-pleasures.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#MeatFeasts {
+  background-image: url("../assets/placeholders/meat-feasts.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#DelightfulDeals {
+  background-image: url("../assets/placeholders/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#CountryCuisines {
+  background-image: url("../assets/placeholders/country-cuisines.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
