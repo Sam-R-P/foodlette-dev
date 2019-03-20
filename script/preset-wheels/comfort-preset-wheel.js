@@ -1,1 +1,0 @@
-//----- Comfort Preset Wheel Javascript -----//

@@ -1,1 +1,0 @@
-//----- databse wheel Javascript -----//

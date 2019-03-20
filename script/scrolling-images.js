@@ -1,1 +1,0 @@
-//----- Scrolling Assets Javascript -----//

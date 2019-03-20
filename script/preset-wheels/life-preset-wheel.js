@@ -1,1 +1,0 @@
-//----- Life Preset Wheel Javascript -----//

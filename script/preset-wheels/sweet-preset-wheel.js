@@ -1,1 +1,0 @@
-//----- Sweet Preset Wheel Javascript -----//

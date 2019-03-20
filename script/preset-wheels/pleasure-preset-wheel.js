@@ -1,1 +1,0 @@
-//----- Pleasure Preset Wheel Javascript -----//
