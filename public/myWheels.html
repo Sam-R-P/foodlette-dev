@@ -160,6 +160,66 @@
       </div>
     </div>
   </header>
+  
+  <div id="creatorBox" class="dialog-root">
+    <div class="dialog-overlay"></div>
+    <div id="wheelCreator" class="creation-container">
+      <article class="dialog-choice">
+        <header class="dialog-header">
+          <a href="javascript:void(0)" class="close-box" id="creatorBoxClose">&times;</a>
+
+          <div id="wheelFlavourText" class="flavour-text">
+            <h1 class="">Wheel Creation</h1>
+            <div>
+              <p class="">Please choose which wheel you would like to create!
+                You may create a maximum of nine wheels. If you wish to create a new wheel and already have nine you may delete an old wheel.</p>
+            </div>
+          </div>
+
+          <div id="wheelTwoOptions" class="option-boxes left display-flex">
+            <p>Create a 50/50 wheel</p>
+          </div>
+
+          <div id="wheelTenOptions" class="option-boxes right display-flex">
+            <p>Create a wheel with ten options</p>
+          </div>
+
+          <div id="wheelTenCreation" class="">
+            <h1 style="margin-top: 0;" class="">Wheel Creation</h1>
+            <p>Ten Options!</p>
+            <form name="wheelTenOptionsForm" action="php/" method="POST">
+              <input type="text" name="op-1" placeholder="1" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="2" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="3" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="4" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="5" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="6" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="7" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="8" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="9" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="10" maxlength="20" required class="Input input-Width-Large formFont">
+
+              <input type="submit" value="Log In" class="formButton formFont">
+              <input type="reset" value="Clear" class="formButton formFont">
+            </form>
+          </div>
+
+          <div id="wheelTwoCreation" class="">
+            <h1 style="margin-top: 0;" class="">Wheel Creation</h1>
+            <p>Two Options!</p>
+            <form name="wheelTenOptionsForm" action="php/" method="POST">
+              <input type="text" name="op-1" placeholder="1" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="op-1" placeholder="2" maxlength="20" required class="Input input-Width-Large formFont">
+
+              <input type="submit" value="Log In" class="formButton formFont">
+              <input type="reset" value="Clear" class="formButton formFont">
+            </form>
+          </div>
+
+        </header>
+      </article>
+    </div>
+  </div>
 
   
   
