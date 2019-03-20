@@ -31,6 +31,9 @@ function getColor(item, maxitem) {
   return RGB2Color(red,green,blue);
 }
 
+/**
+function that draws the roulette wheel which will display different options to the user
+**/
 function drawRouletteWheel() {
   let canvas = document.getElementById("canvas");
   if (canvas.getContext) {
@@ -84,6 +87,9 @@ function drawRouletteWheel() {
   }
 }
 
+/**
+function that spins the wheel
+**/
 function spin() {
   spinAngleStart = Math.random() * 10 + 10;
   spinTime = 0;
@@ -91,6 +97,9 @@ function spin() {
   rotateWheel();
 }
 
+/**
+function that keeps teh wheel rotating for a particular amount of time
+**/
 function rotateWheel() {
   spinTime += 30;
   if(spinTime >= spinTimeTotal) {
@@ -103,6 +112,9 @@ function rotateWheel() {
   spinTimeout = setTimeout('rotateWheel()', 30);
 }
 
+/**
+function that stops the wheel from rotating
+**/
 function stopRotateWheel() {
   clearTimeout(spinTimeout);
   let degrees = startAngle * 180 / Math.PI + 90;
@@ -115,6 +127,9 @@ function stopRotateWheel() {
   ctx.restore();
 }
 
+/**
+function that slows teh wheel down until it stops rotating
+**/
 function easeOut(t, b, c, d) {
   let ts = (t/=d)*t;
   let tc = ts*t;
