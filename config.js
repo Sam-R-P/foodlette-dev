@@ -6,5 +6,5 @@ module.exports.mysql = {
   host: 'localhost',
   user: 'root',
   password: 'root',
-  database: 'name here'
+  database: 'foodlette_DB'
 }
