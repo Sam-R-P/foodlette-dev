@@ -4,6 +4,19 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const io = require('socket.io')(http);
+const mysql = require('mysql2');
+const config = require('./config');
+
+const connection = mysql.createConnection(config.mysql);
+
+//---------- DATABASE ----------//
+try {
+  connection.connect();
+} catch (e) {
+  console.log('Database not connecting')
+  console.log(e);
+}
 
 //---------- SERVER ----------//
 app.use(express.static('public'));
