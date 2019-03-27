@@ -83,7 +83,7 @@
   box-sizing: border-box;
   background-color: #FFF;
   width: 18vw;
-  height: 6vh;
+  height: 7vh;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -118,7 +118,7 @@
   box-sizing: border-box;
   position: relative;
   width: 60vw;
-  height: 6vh;
+  height: 7vh;
   margin: 0;
   background-color: #FFF;
   box-shadow: 0 0 0.2em #888;
