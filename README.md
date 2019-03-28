@@ -70,6 +70,7 @@ We will now be installing the node environment needed for the application to run
 To begin, we need to clone the files from this repository onto the local machine you are using.
 
 **Step 1. Cloning the Repository**
+
 Navigate to **OR** create the directory location you wish to install the application in, using the command line interface.
 
 Once in the desired location, enter the following command...
@@ -83,6 +84,7 @@ git clone https://github.com/Sam-R-P/foodlette-dev.git
 This will cause your local clone to be created in the directory you are within.
 
 **Step 2. Setting up Node**
+
 In the directory you cloned the Foodlette application too, run the following commands in order.
 
 ```
@@ -92,6 +94,7 @@ npm install
 This command **should** install the packages and dependencies required to run the application.
 
 **Step 3. Verify that Application is operational**
+
 We now need to test to see if the application runs when prompted to start.
 
 To do so navigate to the directory in which the application is installed and run the following...
