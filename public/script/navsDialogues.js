@@ -13,3 +13,11 @@ function openNavMenu() {
 function closeNavMenu() {
   document.getElementById("navBar").style.right = "-350px";
 }
+
+function openProfile() {
+  document.getElementById("profileBar").style.right = "98px";
+}
+
+function closeProfile() {
+  document.getElementById("profileBar").style.right = "-350px";
+}
