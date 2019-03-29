@@ -42,7 +42,6 @@ function openProfile() {
 function closeProfile() {
   document.getElementById("profileBar").style.right = "-350px";
 }
-//----------"TAKE THIS OUT WHEN YOU PASTE" - tega ------//
 
 
 function openNavMenu() {
@@ -51,4 +50,14 @@ function openNavMenu() {
 
 function closeNavMenu() {
   document.getElementById("navBar").style.right = "-350px";
+}
+
+function openProfileLogin() {
+    document.getElementById('onloadBox').style.display="flex";
+    openLogin();
+}
+
+function openProfileCreateAccount() {
+    document.getElementById('onloadBox').style.display="flex";
+    openCreateAccount();
 }
