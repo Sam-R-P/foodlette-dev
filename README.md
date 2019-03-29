@@ -45,7 +45,7 @@ mysql -u root -p
 This should prompt a first boot setup of MariaDB. If so complete the setup by entering the necessary information.
 If this does not promt a setup the default password used is "root".
 
-Once the baove steps are completed successfully, you should then see the following output...
+Once the above steps are completed successfully, you should then see the following output...
 
 ```
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -65,7 +65,7 @@ MariaDB [(none)]>
 If so well done, the installion of MariaDB has been successful.
 Navigate back to the root of your command line by pressing ctrl+c.
 
-### Server Environment
+### Server Operation
 We will now be installing the node environment needed for the application to run, as well as the application files too.
 To begin, we need to clone the files from this repository onto the local machine you are using.
 
@@ -85,7 +85,7 @@ This will cause your local clone to be created in the directory you are within.
 
 **Step 2. Setting up Node**
 
-In the directory you cloned the Foodlette application too, run the following commands in order.
+In the directory you cloned the Foodlette application too, run the following command.
 
 ```
 npm install
@@ -93,7 +93,20 @@ npm install
 
 This command **should** install the packages and dependencies required to run the application.
 
-**Step 3. Verify that Application is operational**
+**Step 3. Setting up MariaDB**
+
+Now we need to get the database setup to run with the application. 
+
+To do so, navigate to the directory in which you cloned the application to. Then run the following code.
+
+```
+npm run initsql
+```
+
+You will then be prompted to enter your password for MariaDB that you either setup earlier **OR** set your own for. Enter the password.
+Well done, the database structure has been built and the dummy data inserted to enable testing.
+
+**Step 4. Verify that Application is completely operational**
 
 We now need to test to see if the application runs when prompted to start.
 
@@ -109,6 +122,7 @@ npm start
 Team2D@1.0.0 start /home/up863457
 node serverFunctions
 
+Database Connection Success
 Foodlette listening on port 8080
 ```
 ...then everything is operational and working, congrats!
@@ -140,5 +154,9 @@ npm install mysql2
 ```
 
 Once you have installed all of the above packages you should be able to successfully re-attempt starting the application.
+
+```
+npm start
+```
 
 Well done. The application, database, all packages and dependencies have been installed and setup successfully.
