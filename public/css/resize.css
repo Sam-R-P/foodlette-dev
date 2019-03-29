@@ -1,1 +1,279 @@
 /* Foodlette Resizing Cascading Style Sheet */
+@media screen and (max-width: 1600px) {
+  #leftArticle {
+    width: 25vw;
+  }
+
+  .key-container {
+    width: 23vw;
+  }
+
+  #rightArticle {
+    width: 75vw;
+  }
+
+  .right-article-right-column {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .key-color-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+  }
+
+  .key-color-text {
+    font-size: 28px;
+  }
+
+  .button-favourite {
+    font-size: 28px;
+    height: 38px;
+  }
+
+  .right-article-left-column {
+    width: 50vw;
+  }
+
+  .right-article-right-column {
+    width: 25vw;
+  }
+
+  .wheel-settings {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .my-favourites-container {
+    height: 87vh;
+  }
+
+  .favourites-page {
+    height: 81vh;
+  }
+
+  .favourites-item {
+    width: 31.6666667vw;
+  }
+
+  .my-wheels-container {
+    height: 112.5vh;
+  }
+
+  .my-wheels-page {
+    height: 106.5vh;
+  }
+
+  .my-wheels-item {
+    width: 31.6666667vw;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .index-popularity-title {
+    font-size: 27px;
+  }
+
+  .featured-title {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .category-item .view-icon {
+    height: 40%;
+    width: 40%;
+  }
+
+  .index-popularity-container {
+    width: 95vw;
+  }
+
+  .index-popularity-boxes {
+    width: 47.5vw;
+  }
+
+  .index-popularity-title-container {
+    width: 30vw;
+    height: 6vh;
+  }
+
+  .featured-container {
+    width: 95vw;
+  }
+
+  .featured-title-container {
+    width: 95vw;
+    height: 6vh;
+  }
+
+  .featured-page {
+    width: 95vw;
+  }
+
+  .featured-item {
+    width: 31.6666667vw;
+  }
+
+  .scrollingImage-content{
+    width: 95vw;
+  }
+
+  #indexLeftArticle {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    float: left;
+  }
+
+  #indexRightArticle {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    float: left;
+  }
+
+  .index-wheel {
+    width: 55vw;
+  }
+
+  .button-wheel {
+    display: block;
+  }
+
+  #rightArticle {
+    width: 75vw;
+  }
+
+  .right-article-left-column {
+    width: 75vw;
+    height: calc(100vh - 60px - 15vh);
+  }
+
+  .right-article-right-column {
+    width: 75vw;
+    height: 5vh;
+    display: inline-flex;
+    position: absolute;
+    bottom: 16vh;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .index-wheel {
+    width: 60vw;
+  }
+
+  .wheel-settings {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .popularity-title {
+    font-size: 26px;
+  }
+
+  .category-title {
+    font-size: 26px;
+  }
+
+  .index-popularity-title {
+    font-size: 26px;
+  }
+
+  .featured-title {
+    font-size: 26px;
+  }
+
+  .item-overlay-title {
+    font-size: 26px;
+  }
+
+  .category-item .view-icon {
+    height: 45%;
+    width: 45%;
+  }
+
+  .index-wheel {
+    width: 65vw;
+  }
+
+  #indexLeftArticle {
+    height: calc(100vh - 200px);
+  }
+
+  .wheel-settings {
+    width: 60vw;
+  }
+
+  .key-color-circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 27px;
+  }
+
+  .key-color-text {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  .button-favourite {
+    font-size: 26px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .index-popularity-container {
+    height: 83vh;
+  }
+
+  .index-popularity-boxes {
+    width: 95vw;
+  }
+
+  .popularity-container {
+    height: 83vh;
+  }
+
+  .popularity-boxes {
+    width: 95vw;
+  }
+
+  .popularity-title-container {
+    width: 62vw;
+  }
+
+  .category-item .item-overlay {
+    opacity: 1;
+    border: none;
+    background-color: transparent;
+  }
+
+  .category-item a {
+    z-index: 650;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  #indexLeftArticle {
+    height: calc(100vh - 250px);
+  }
+
+  #indexRightArticle {
+    height: 130vh;
+  }
+
+  .index-popularity-title-container {
+    width: 62vw;
+  }
+
+  #bodyContentCategories {
+    height: calc(83vh + 3vw + 41.5vh + 3.9vw);
+    overflow-y: scroll;
+  }
+}
