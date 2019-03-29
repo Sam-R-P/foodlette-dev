@@ -1,13 +1,22 @@
 //----- Scrolling Assets Javascript -----//
 
 //----- Global Variables -----//
+
 let x;
 let slideIndex = 1;
 
+/**
+* Is called using an "onclick" method attached to a HTML circle used for navigation of menus. Calls a further function to update the UI.
+* @param {number} n The number submitted when a HTML navigation circle is clicked, telling the script which menu to open.
+*/
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
 
+/**
+* Is called on the page load via the loadScripts function located in index.js. The function shows a specific 'slide' containing menus.
+* @param {number} n The number used to determine what slide the UI should open the menu on.
+*/
 function showDivs(n) {
   let i;
   let x = document.getElementsByClassName("slideContainer");
