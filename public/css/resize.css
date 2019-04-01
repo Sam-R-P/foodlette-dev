@@ -277,3 +277,55 @@
     overflow-y: scroll;
   }
 }
+
+@media screen and (max-width: 750px) {
+  #leftArticle {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 85vh;
+  }
+
+  .key-container {
+    width: 100vw;
+    height: calc(50vh - 60px - 2vw);
+  }
+
+  .key-item {
+    width: 45%;
+    height: 13%;
+  }
+
+  #rightArticle {
+    width: 100vw;
+    height: 85vh;
+  }
+
+  .right-article-left-column {
+    width: 100vw;
+  }
+
+  .right-article-right-column {
+    width: 100vw;
+    bottom: 3vh;
+  }
+
+  .wheel-settings {
+    width: 80vw;
+  }
+
+  .key-color-circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 27px;
+  }
+
+  .key-color-text {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  #bodyContentWheel {
+    height: 135vh;
+  }
+}
