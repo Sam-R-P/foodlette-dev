@@ -4,8 +4,8 @@ window.onload = loadScripts;
  * One window load the function loadScripts() loads in the required functions for page interactivity to work
  */
 function loadScripts() {
-    //addNavEventListeners();
-    //addDialogueEventListeners();
+    addNavEventListeners();
+    addDialogueEventListeners();
     addWheelEventListeners();
     drawRouletteWheel();
     showDivs(1);
