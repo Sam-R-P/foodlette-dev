@@ -1,7 +1,25 @@
 //----- Nav & Dialogues Eventlisteners Javascript -----//
 
 
-//--------- addNavEventListeners() &&& function addDialogueEventListeners() ----//
+function addNavEventListeners() {
+  //phUserProfile open profileBar
+  document.getElementById("openProfileBar").addEventListener("click", openProfile);
+  document.getElementById("closeProfileBar").addEventListener("click", closeProfile);
+  document.getElementById("openLogin").addEventListener("click", openProfileLogin);
+  document.getElementById("openCreateAccount").addEventListener("click", openProfileCreateAccount);
+  //phNavButton open navigationBar
+  document.getElementById("openNavBar").addEventListener("click", openNavMenu);
+  document.getElementById("closeNavBar").addEventListener("click", closeNavMenu);
+}
+
+function addDialogueEventListeners() {
+  //onload Box
+  document.getElementById("onloadClose").addEventListener("click", closeBox);
+  document.getElementById("guest").addEventListener("click", closeBox);
+  document.getElementById("createAccount").addEventListener("click", openCreateAccount);
+  document.getElementById("loginHereText").addEventListener("click", openLogin);
+}
+
 //---------- &&& function openProfile() &&& function closeProfile() --------------//
 
 function load() {
