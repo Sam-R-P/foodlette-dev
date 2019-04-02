@@ -1,21 +1,23 @@
 {
   "name": "Team2D",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is the official repository for collaborative work on the Foodlette web application.",
-  "main": "serverFunctions.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node serverFunctions",
-    "initsql": "mysql -u root -p < database.sql"
+    "start": "node server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/portsoc/ws_ajax.git"
-  },
-  "author": "Team2D",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/portsoc/ws_ajax/issues"
-  },
-  "homepage": "https://github.com/portsoc/ws_ajax#readme"
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "pg": "6.4.2",
+    "sequelize": "3.33.0"
+  }
 }
