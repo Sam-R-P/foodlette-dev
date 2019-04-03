@@ -8,7 +8,7 @@ function loadScripts() {
 }
 
 //WHEELS//
-const Lifestyles = ["Gluten Free", "Pescatarian", "Vegetarian", "Vegan", "Low Fat", "Lactose Free", "Carnivore", "Sugar Free", "Hilo", "Keto"];
+const Lifestyles = ["Gluten Free", "Pescatarian", "Vegetarian", "Vegan", "Low Fat", "Lactose Free", "Carnivore", "Sugar Free", "Halal", "Keto"];
 let options = Lifestyles;
 
 function addWheelEventListeners() {
