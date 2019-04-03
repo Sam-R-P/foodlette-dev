@@ -8,7 +8,7 @@ function loadScripts() {
 }
 
 //WHEELS//
-const GuiltyPleasures = ["Fudge", "Cookie Doe", "Cheese", "Cheese Cake", "Chocolate", "Sticky Toffee", "Bakery", "Doe Balls", "Pancakes", "Waffles"];
+const GuiltyPleasures = ["Fudge", "Cookie Dough", "Cheese", "Cheese Cake", "Chocolate", "Sticky Toffee", "Bakery", "Doe Balls", "Pancakes", "Waffles"];
 let options = GuiltyPleasures;
 
 function addWheelEventListeners() {
