@@ -63,7 +63,7 @@ app.get('/home', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-// Routes for accessing the myWheels Page
+// Routes for accessing the myWheels Page and other content
 app.get('/myWheels', (req, res) => {
   if (req.session.user && req.cookies.user_sid) {
     res.sendFile(__dirname + '/public/myWheels.html');
@@ -81,6 +81,14 @@ app.get('/favourites', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
+  if (req.session.user && req.cookies.user_sid) {
+    res.sendFile(__dirname + '/public/myWheels.html');
+  } else {
+    res.redirect('/login');
+  }
+});
+
+app.get('/loginError', (req, res) => {
   if (req.session.user && req.cookies.user_sid) {
     res.sendFile(__dirname + '/public/myWheels.html');
   } else {
@@ -113,7 +121,7 @@ app.route('/signup').get(sessionChecker, (req, res) => {
     res.redirect('/myWheels');
   })
   .catch(error => {
-    res.redirect('/signup');
+    res.sendFile(__dirname + '/public/signupError.html');
   });
 });
 
@@ -122,14 +130,14 @@ app.route('/login').get(sessionChecker, (req, res) => {
   res.sendFile(__dirname + '/public/login.html');
 })
 .post((req, res) => {
-  var username = req.body.username,
+  let username = req.body.username,
   password = req.body.password;
 
   User.findOne({ where: { username: username } }).then(function (user) {
     if (!user) {
-      res.redirect('/login');
+      res.sendFile(__dirname + '/public/loginError.html');
     } else if (!user.validPassword(password)) {
-      res.redirect('/login');
+      res.sendFile(__dirname + '/public/loginError.html');
     } else {
       req.session.user = user.dataValues;
       res.redirect('/myWheels');
@@ -181,5 +189,5 @@ app.get('/country', function(req, res) {
 //---------- Error Handling ----------//
 // Route for handling 404 requests
 app.use(function (req, res, next) {
-  res.status(404).send("Sorry can't find that!")
+  res.status(404).send("Sorry that doesnt exist!")
 });
