@@ -3,15 +3,21 @@ window.onload = loadScripts;
 
 function loadScripts() {
   addNavEventListeners();
-  addDialogueEventListeners();
   addWheelEventListeners();
   drawRouletteWheel();
 }
 
 //WHEELS//
-const ComfortCreations = ["Pizza", "comfort 2", "comfort 3", "comfort 4", "comfort 5", "comfort 6", "comfort 7", "comfort 8", "comfort 9", "comfort 10"];
+const ComfortCreations = ["Pizza", "Spaghetti", "Ice Cream", "Lasagne", "Cake", "Macaroni Cheese", "Meatloaf", "Kebab", "Pie", "Biscuits"];
+
+/**
+ * Sets the value from the array as the values to be used on the roulette wheel
+ */
 let options = ComfortCreations;
 
+/**
+ * Adds eventlistener for the spin button
+ */
 function addWheelEventListeners() {
   document.getElementById("spin").addEventListener("click", spin);
 }
