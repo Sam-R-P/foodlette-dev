@@ -33,6 +33,7 @@
 .key-color-circle {
   height: 70px;
   width: 70px;
+  margin-left: 40px;
   display: inline-flex;
   float: left;
   border-radius: 35px;
