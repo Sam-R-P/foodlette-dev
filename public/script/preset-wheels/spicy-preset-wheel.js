@@ -3,13 +3,12 @@ window.onload = loadScripts;
 
 function loadScripts() {
   addNavEventListeners();
-  addDialogueEventListeners();
   addWheelEventListeners();
   drawRouletteWheel();
 }
 
 //WHEELS//
-const SpicySensations = ["spicy 1", "spicy 2", "spicy 3", "spicy 4", "spicy 5", "spicy 6", "spicy 7", "spicy 8", "spicy 9", "spicy 10"];
+const SpicySensations = ["Hot Wings", "Chilli", "Salsa", "Stuffed Chilli", "Vindaloo", "Phall", "Chilli Carni", "Mandras", "Chilli Beef", "Spicy Rice"];
 let options = SpicySensations;
 
 function addWheelEventListeners() {
