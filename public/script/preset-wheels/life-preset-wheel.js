@@ -3,13 +3,12 @@ window.onload = loadScripts;
 
 function loadScripts() {
   addNavEventListeners();
-  addDialogueEventListeners();
   addWheelEventListeners();
   drawRouletteWheel();
 }
 
 //WHEELS//
-const Lifestyles = ["Lifestyles 1", "Lifestyles 2", "Lifestyles 3", "Lifestyles 4", "Lifestyles 5", "Lifestyles 6", "Lifestyles 7", "Lifestyles 8", "Lifestyles 9", "Lifestyles 10"];
+const Lifestyles = ["Gluten Free", "Pescatarian", "Vegetarian", "Vegan", "Low Fat", "Lactose Free", "Carnivore", "Sugar Free", "Hilo", "Keto"];
 let options = Lifestyles;
 
 function addWheelEventListeners() {
