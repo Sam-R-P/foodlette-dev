@@ -110,6 +110,36 @@
       </div>
     </div>
   </header>
+  <div id="onloadBox" class="dialog-root">
+    <div class="dialog-overlay"></div>
+    <div class="dialog-container" style="height: 490px">
+      <article class="dialog-choice">
+        <header class="dialog-header">
+
+          <div id="createAccountForm" class="">
+            <h1 class="">Create an account</h1>
+            <form action="/signup" method="post">
+              <input type="text" name="email" placeholder="Email" minlength="6" maxlength="70" required class="Input input-Width-Large formFont">
+              <input type="text" name="email2" placeholder="Re-type email" minlength="6" maxlength="70" required class="Input input-Width-Large formFont">
+
+              <input type="text" name="username" placeholder="Username" minlength="6" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="text" name="username2" placeholder="Re-type username" minlength="6" maxlength="20" required class="Input input-Width-Large formFont">
+
+              <input type="password" name="password" placeholder="Passwords must be six characters or more" minlength="6" maxlength="20" required class="Input input-Width-Large formFont">
+              <input type="password" name="password2" placeholder="Re-type password" minlength="6" maxlength="20" required class="Input input-Width-Large formFont">
+
+              <input type="submit" value="Submit" class="formButton formFont">
+              <input type="reset" value="Clear" class="formButton formFont">
+            </form>
+            <p style="margin-top: 25px;">One or more of the details you have entered are invalid! Please try again.</p>
+            <p style="margin-top: 10px;">You can log in <a href="/login">here</a>.</p>
+          </div>
+
+        </header>
+      </article>
+    </div>
+  </div>
+
 
   
 </body>
