@@ -1,0 +1,68 @@
+#loginForm {
+  display: block;
+  position: relative;
+  top: -15px;
+}
+
+#createAccountForm {
+  display: block;
+  position: relative;
+  top: -25px;
+}
+
+.dialog-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  overflow-x: auto;
+  height: 100vh;
+  z-index: 900;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.dialog-root article {
+  padding: 1.5em;
+  display: block;
+}
+
+.dialog-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.25;
+  z-index: 899;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dialog-container {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 0.5em;
+  border-width: 0px;
+  border-style: solid;
+  width: 600px;
+  z-index: 901;
+}
+
+.dialog-choice {
+  height: calc(100% - 3em);
+  width: calc(100% - 3em);
+}
+
+.dialog-header p, h1 {
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+
+.dialog-header a:hover {
+  color: #5fb709;
+}
