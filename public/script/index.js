@@ -5,7 +5,6 @@ window.onload = loadScripts;
  */
 function loadScripts() {
     addNavEventListeners();
-    addDialogueEventListeners();
     addWheelEventListeners();
     drawRouletteWheel();
     showDivs(1);
