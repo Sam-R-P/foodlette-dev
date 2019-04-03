@@ -1,0 +1,76 @@
+/* Form Styling */
+form p {
+  font-size: 18px;
+  margin: 16px 0px 3px 0px;
+}
+
+.formFont {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.input-Width-Large {
+  min-width: 100%;
+}
+
+.input-Width-Medium {
+  min-width: 50%;
+}
+
+.input-Width-Small {
+  min-width: 25%;
+}
+
+.infoText {
+  margin: 15px 0px 15px 0px;
+  color: #A6A6A6;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.Input {
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #363636;
+  margin-bottom: 15px;
+}
+
+.Input:focus {
+  border: 1px solid #009BFF;
+}
+
+.textArea {
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #363636;
+  resize: none;
+}
+
+.formButton {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 2px 20px;
+  height: 30px;
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #444444;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background-color: #FFFFFF;
+  color: #5fb709;
+  transition-property: background-color, color;
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease, ease;
+}
