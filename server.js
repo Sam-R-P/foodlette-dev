@@ -186,6 +186,10 @@ app.get('/country', function(req, res) {
   res.sendFile(__dirname + '/public/preset-wheels/countryWheel.html');
 });
 
+app.get('/pizza', function(req, res) {
+  res.sendFile(__dirname + '/public/preset-wheels/premierPizza.html');
+});
+
 //---------- Error Handling ----------//
 // Route for handling 404 requests
 app.use(function (req, res, next) {
