@@ -111,6 +111,32 @@
       </div>
     </div>
   </header>
+  <div id="onloadBox" class="dialog-root">
+    <div class="dialog-overlay"></div>
+    <div class="dialog-container" style="height: 340px">
+      <article class="dialog-choice">
+        <header class="dialog-header">
+
+          <div id="loginForm" class="">
+            <h1 class="">Log In</h1>
+            <p>Welcome back!</p>
+            <form action="/login" method="post">
+              <input type="text" name="username" placeholder="Username" minlength="6" maxlength="30" required class="Input input-Width-Large formFont">
+
+              <input type="password" name="password" placeholder="Password" minlength="6" maxlength="20" required class="Input input-Width-Large formFont">
+
+              <input type="submit" value="Log In" class="formButton formFont">
+              <input type="reset" value="Clear" class="formButton formFont">
+            </form>
+            <p style="margin-top: 25px;">Either your username or password is incorrect! Please try again.</p>
+            <p style="margin-top: 10px;">You can create an account <a href="/signup">here</a>.</p>
+          </div>
+
+        </header>
+      </article>
+    </div>
+  </div>
+
 
   
 </body>
