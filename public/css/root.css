@@ -85,7 +85,7 @@ body {
 }
 
 #MoodFoods {
-  background-image: url("../assets/placeholders/mood-foods.jpeg");
+  background-image: url("../assets/placeholders/lifestyles.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,7 +106,7 @@ body {
 }
 
 #Lifestyles {
-  background-image: url("../assets/placeholders/lifestyles.jpg");
+  background-image: url("../assets/placeholders/mood-foods.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,7 +127,7 @@ body {
 }
 
 #DelightfulDeals {
-  background-image: url("../assets/placeholders/");
+  background-image: url("../assets/placeholders/delightful-deals.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,6 +135,13 @@ body {
 
 #CountryCuisines {
   background-image: url("../assets/placeholders/country-cuisines.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#PremierPizza {
+  background-image: url("../assets/placeholders/premier-pizaa.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
