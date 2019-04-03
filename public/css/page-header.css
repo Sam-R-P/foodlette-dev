@@ -168,12 +168,12 @@ ul {
 
 /* Profile Menu */
 .profile-nav {
-  width: 350px;
+  width: 475px;
   height: 46px;
   position: fixed;
   z-index: 99;
   top: 10px;
-  right: -350px;
+  right: -475px;
   overflow-x: hidden;
   padding-top: 60px;
   border-radius: 2em;
