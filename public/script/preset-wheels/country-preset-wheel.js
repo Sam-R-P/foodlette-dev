@@ -9,7 +9,7 @@ function loadScripts() {
 }
 
 //WHEELS//
-const CountryCuisines = ["country 1", "country 2", "country 3", "country 4", "country 5", "country 6", "country 7", "country 8", "country 9", "country 10"];
+const CountryCuisines = ["Roast", "Turkey", "Rice", "Curry", "Noodles", "Baguette", "Pizza", "Taco", "Pho", "Sushi"];
 let options = CountryCuisines;
 
 function addWheelEventListeners() {
